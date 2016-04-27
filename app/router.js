@@ -32,6 +32,7 @@ module.exports = (function() {
   /* generator: begin imports */
 
   const V1SwervesController = Nodal.require('app/controllers/v1/swerves_controller.js');
+  const V1UsersController = Nodal.require('app/controllers/v1/users_controller.js');
 
   /* generator: end imports */
 
@@ -40,6 +41,7 @@ module.exports = (function() {
   /* generator: begin routes */
 
   router.route('/v1/swerves/{id}').use(V1SwervesController);
+  router.route('/v1/users/{id}').use(V1UsersController);
 
   /* generator: end routes */
 
